@@ -16,3 +16,5 @@ sudo certbot certonly --standalone -d kplr85.my.to
 ```
 sudo apt-get install postfix
 ```
+```
+echo "This is the body of the email" | mail -s "This is the subject line" -r from@linux.org <YOUR_EMAIL_ADDRESS_GOES_HERE>
