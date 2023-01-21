@@ -11,7 +11,7 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 ```
 sudo certbot certonly --standalone -d kplr85.my.to
-
+```
 
 ```
 sudo apt-get install postfix
