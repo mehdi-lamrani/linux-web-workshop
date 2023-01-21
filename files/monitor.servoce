@@ -1,0 +1,8 @@
+[Unit]
+Description=My Monitoring Script
+
+[Service]
+ExecStart=/home/ubuntu/<NAME-OF-YOUR-MONITORING-SCRIPT>.sh
+
+[Install]
+WantedBy=multi-user.target
