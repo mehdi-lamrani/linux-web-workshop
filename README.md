@@ -33,11 +33,24 @@ curl checkip.amazonaws.com
 
 ![image](https://user-images.githubusercontent.com/28993140/213912627-1031cbef-e58a-48fa-b0e9-86aadef4315c.png)
 
+
+
 - Install certbot
 
 ```
 sudo apt-get install certbot -y
 ```
+
+- Stop you Apache Server
+
+`sudo service apache2 stop`
+
+- request a certificate from "lets'encrypt"
+
+`sudo certbot certonly --standalone -d <YOUR-NAME>.my.to`
+
+![image](https://user-images.githubusercontent.com/28993140/213913290-f1d78933-1225-4787-87a1-74c9aa95e748.png)
+![image](https://user-images.githubusercontent.com/28993140/213913311-39a055c7-51bd-4167-802c-d46cd9f6688b.png)
 
 
 ```
@@ -57,3 +70,7 @@ sudo apt-get install postfix
 ```
 ```
 echo "This is the body of the email" | mail -s "This is the subject line" -r from@linux.org <YOUR_EMAIL_ADDRESS_GOES_HERE>
+
+
+- **BONUS : **
+Write a Bash script that test all your colleague's websites and validate an HTTPS connection is set and that the page contains their names
