@@ -1,13 +1,26 @@
 # Setting up & Securing an Apache Web Server on UBUNTU 22.04
 
 
-```
-sudo cp /var/www/html/index.html /var/www/html/index.ubuntu.html
+- install apache web server
 
+```
 sudo apt-get install apache2 -y
 
 curl checkip.amazonaws.com
 ```
+
+- save the original homepage
+
+`sudo cp /var/www/html/index.html /var/www/html/index.ubuntu.html`
+
+- edit the homepage and edit it 
+- replace the content by the one included in the `files`folder included this git
+  
+  - a few assignements : 
+  - Change the Page Name and include your name
+  - Change the content by including your name
+  - Display Live Time with a recrusive Javascript Function
+
 ![image](https://user-images.githubusercontent.com/28993140/213912238-1a1a844f-4d31-482a-af2d-19b0cc5772c7.png)
 
 - Goto https://freedns.afraid.org/
