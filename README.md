@@ -79,6 +79,13 @@ sudo cp /etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/0
 
 ![image](https://user-images.githubusercontent.com/28993140/213914381-bda8531f-a373-4825-9537-024cb3c7cc6f.png)
 
+![image](https://user-images.githubusercontent.com/28993140/213914447-e626c261-a889-4a85-9eed-82b2a4da30a3.png)
+
+- Display the certificate
+
+![image](https://user-images.githubusercontent.com/28993140/213914483-0c74cd88-afd6-4953-a781-6a6bbdbdc1b3.png)
+
+![image](https://user-images.githubusercontent.com/28993140/213914503-128dab1c-9f96-4bf3-bebb-b3fcc39ff192.png)
 
 - install postfix to send an automated email from the server
 
