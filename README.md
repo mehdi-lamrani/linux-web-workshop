@@ -1,4 +1,4 @@
-# linux-web-workshop
+# Setting up & Securing an Apache Web Server on UBUNTU 22.04
 
 
 ```
