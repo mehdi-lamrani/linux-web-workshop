@@ -75,6 +75,12 @@ sudo cp /etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/0
 
 `sudo service apache2 start`
 
+- check that your connection is secure via https : https://<YOUR_DOMAIN_NAME>
+
+![image](https://user-images.githubusercontent.com/28993140/213914381-bda8531f-a373-4825-9537-024cb3c7cc6f.png)
+
+
+- install postfix to send an automated email from the server
 
 ```
 sudo apt-get install postfix
