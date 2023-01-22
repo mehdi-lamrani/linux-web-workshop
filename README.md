@@ -63,6 +63,13 @@ sudo cp /etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/0
 
 ![image](https://user-images.githubusercontent.com/28993140/213913697-67a88595-e47d-4bc8-96a1-0cd51835d998.png)
 
+- activate ssl on your ubuntu linux instance
+
+`sudo a2enmod ssl`
+
+- Test your apache configuration and check that the ouput is `Syntax OK`
+
+`sudo apachectl configtest`
 
 - Start you Apache Server
 
