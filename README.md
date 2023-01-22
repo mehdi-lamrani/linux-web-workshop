@@ -53,23 +53,29 @@ sudo apt-get install certbot -y
 ![image](https://user-images.githubusercontent.com/28993140/213913311-39a055c7-51bd-4167-802c-d46cd9f6688b.png)
 
 
-```
-sudo apt install python3 python3-venv libaugeas0
-sudo vim /etc/needrestart/needrestart.conf
-sudo python3 -m venv /opt/certbot/
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-```
+- save your default server configuration
 
 ```
-sudo certbot certonly --standalone -d kplr85.my.to
+sudo cp /etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/000-default.conf.save
 ```
+
+- edit your configuration file and add the 443 VirutalHost Entry and specify the generated key and certificate
+
+![image](https://user-images.githubusercontent.com/28993140/213913697-67a88595-e47d-4bc8-96a1-0cd51835d998.png)
+
+
+- Start you Apache Server
+
+`sudo service apache2 start`
+
 
 ```
 sudo apt-get install postfix
 ```
+
 ```
 echo "This is the body of the email" | mail -s "This is the subject line" -r from@linux.org <YOUR_EMAIL_ADDRESS_GOES_HERE>
+```
 
 
 - **BONUS : **
